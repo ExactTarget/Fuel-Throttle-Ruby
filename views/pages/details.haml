@@ -1,0 +1,31 @@
+%div{ :class => 'row-fluid' }
+	%div{ :class => 'row-fluid span9', :id => 'campaign' }
+		%div{ :class => 'page-header' }
+			- p @campaign.inspect
+			- if @campaign[:status]
+				%h1{ :style => "color: ##{@campaign[:details]['color']}" }= @campaign[:details]['name']
+			%div
+				- if @campaign[:status]
+					%div{ :class => 'span6' }
+						%p
+							%h4
+								%strong{ :class => 'muted' } Name:
+								= @campaign[:details]['name']
+						%p
+							%h4
+								%strong{ :class => 'muted' } Description:
+								= @campaign[:details]['description']
+						%p
+							%h4
+								%strong{ :class => 'muted' } ID:
+								%span{:id => "campaignid"} #{@campaign[:details]['id']}
+						%p
+					%div{ :class => 'span6' }
+						%p
+							%h4
+								%strong{ :class => 'muted' } Created On:
+								= @campaign[:details]['createdDate']
+						%p
+							%h4
+								%strong{ :class => 'muted' } Modified On:
+								= @campaign[:details]['modifiedDate']

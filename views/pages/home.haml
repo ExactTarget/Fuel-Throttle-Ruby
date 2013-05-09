@@ -1,0 +1,48 @@
+%div{ :class => 'span5 dashboard' }
+	%h1= @campCount
+	%h5 Total Campaigns
+%div{ :class => 'span2' }
+%div{ :class => 'span5 dashboard' }
+	%h1= @lastEdit
+	%h5 Last Modified
+%div{ :class => 'container' }
+	%table{ :id => 'campaignGrid', :class => 'table table-bordered datagrid' }
+		%thead
+			%tr
+				%th
+					%span{ :class => 'datagrid-header-title' }
+						Campaign List
+					%div{ :class => 'datagrid-header-left' }
+					%div{ :class => 'datagrid-header-right' }
+						%div{ :class => 'input-append search' }
+							%input{ :type => 'text', :class => 'input-medium', :placeholder => 'Search' }
+								%button{ :class => 'btn' }
+									%i{ :class => 'icon-search' }
+		%tfoot
+			%tr
+				%th
+					%div{ :class => 'datagrid-footer-left', :style => 'display:none;' }
+						%div{ :class => 'grid-controls' }
+							%span
+								%span{ :class => 'grid-start' }
+								%span
+									through
+								%span{ :class => 'grid-end' }
+								%span
+									of
+								%span{ :class => 'grid-count' }
+					%div{ :class => 'datagrid-footer-right', :style => 'display: none;' }
+						%div{ :class => 'grid-pager' }
+							%button{ :class => 'btn grid-prevpage' }
+								%i{ :class => 'icon-chevron-left' }
+							%span 
+								Page
+							%div{ :class => 'input-append dropdown combobox' }
+								%input{ :class => 'span1', :type => 'text' }
+							%span
+								of
+							%span{ :class => 'grid-pages' }
+							%button{ :class => 'btn grid-nextpage' }
+								%i{ :class => 'icon-chevron-right' }
+
+%script{ :type => "text/javascript", :src => "js/home.js"}

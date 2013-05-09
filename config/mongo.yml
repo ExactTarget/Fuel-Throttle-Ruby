@@ -1,0 +1,18 @@
+base: &base
+    adapter: mongodb
+    database: fuelThrottleRuby-db
+
+# These are needed to authenticate with your db
+    host: localhost
+    username: myUsername
+    password: myPassword
+
+development:
+    <<: *base
+
+test:
+    <<: *base
+    database: fuelThrottleRuby-db
+
+production:
+    <<: *base

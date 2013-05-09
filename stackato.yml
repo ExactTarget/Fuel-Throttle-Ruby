@@ -1,0 +1,9 @@
+name: fuelThrottleRuby
+instances: 1
+framework:
+    type: rack
+    runtime: ruby19
+mem: 128
+services:
+    ${name}-db: mongodb
+ignores: ['.git']
