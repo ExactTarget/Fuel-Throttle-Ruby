@@ -15,16 +15,7 @@ class Main < Sinatra::Base
         end
         redirect to('/')
     end
-	
-	post '/login' do
-		if params['jwt'] then
-			session[:authStub] = ET_Client.new(false, false, request.POST)
-		else
-			#Process jwt here and make a new stub
-			session[:authStub] = ET_Client.new
-		end
-		redirect to('/')
-	end
+
 	
 	get '/' do
 		camp = ET_Campaign.new
