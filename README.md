@@ -93,12 +93,6 @@ Contributions are welcomed, to contribute to Fuel Throttle:
 1. Submit a pull request [GitHub help](https://help.github.com/articles/using-pull-requests)
 
 
-License
--
-
-MIT
-
-*Free Software, Currently only recommended for internal ExactTarget usage!*
 
   [Michael Clark]: https://github.com/MichaelAllenClark?tab=activity
   [@creatovisguru]: http://twitter.com/bdeanindy
@@ -118,6 +112,9 @@ MIT
   [StackatoMC]: http://www.activestate.com/stackato/download_vm
   [StackatoClient]: http://www.activestate.com/stackato/download_client
   [stackatoAlias]: mailto:stackato@exacttarget.com
+
+
+License
 
 
 Copyright (c) 2013 ExactTarget, Inc.
