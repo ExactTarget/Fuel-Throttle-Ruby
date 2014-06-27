@@ -115,7 +115,7 @@ Contributions are welcomed, to contribute to Fuel Throttle:
 
 
 License
-
+-
 
 Copyright (c) 2013 ExactTarget, Inc.
 All rights reserved.
